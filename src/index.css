@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+.dark {
+  background-color: black;
+  color: whitesmoke;
+}
+.light {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.education {
+  color: #fff;
+  background: black;
+}
+.education .title::before,
+.project .title::before {
+  background: #fff;
+}
+.education .title::after {
+  background: black;
+  content: "Qualification";
+}
+
+.education .serv-content .card {
+  width: calc(33% - 50px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.education .serv-content .card:hover {
+  background: teal;
+  font-weight: 600;
+}
+.education .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+.education .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+.education .serv-content .card .i {
+  color: teal;
+  font-weight: 600;
+}
+.education .serv-content .card:hover .i {
+  color: #fff;
+}
+.education .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: black;
+  transform: translateX(-50%);
+}
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: teal;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
